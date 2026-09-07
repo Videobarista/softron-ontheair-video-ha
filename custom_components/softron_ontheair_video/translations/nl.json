@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Softron OnTheAir Video",
+        "description": "Vul het adres in van de Mac waarop OnTheAir Video draait. De REST API gebruikt poort 8081 voor instantie 1, 8082 voor instantie 2, enzovoort.",
+        "data": {
+          "host": "Host",
+          "port": "Poort",
+          "name": "Naam",
+          "username": "Gebruikersnaam (optioneel)",
+          "password": "Wachtwoord (optioneel)",
+          "use_https": "HTTPS gebruiken",
+          "verify_ssl": "SSL-certificaat controleren"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Geen verbinding met OnTheAir Video. Controleer IP-adres, poort en of Remote Control aanstaat bij Settings > HTTP Server.",
+      "invalid_auth": "OnTheAir Video weigert deze inloggegevens.",
+      "unknown": "Onverwacht antwoord van OnTheAir Video."
+    },
+    "abort": {
+      "already_configured": "Deze OnTheAir Video-instantie is al toegevoegd."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opties",
+        "data": {
+          "scan_interval": "Pollinterval (seconden)",
+          "fps": "Terugvalframerate voor timecode-omrekening",
+          "thumbnail": "Thumbnail van de video-uitgang tonen"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": { "name": "Afspeelstatus" },
+      "current_clip": { "name": "Huidige clip" },
+      "playlist": { "name": "Playlist" },
+      "next_clip": { "name": "Volgende clip" },
+      "elapsed": { "name": "Verstreken" },
+      "remaining": { "name": "Resterend" },
+      "duration": { "name": "Clipduur" },
+      "next_live": { "name": "Volgende live" },
+      "fps": { "name": "Framerate" }
+    }
+  }
+}

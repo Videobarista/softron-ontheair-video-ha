@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Softron OnTheAir Video",
+        "description": "Enter the address of the Mac running OnTheAir Video. The REST API uses port 8081 for instance 1, 8082 for instance 2, and so on.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "name": "Name",
+          "username": "Username (optional)",
+          "password": "Password (optional)",
+          "use_https": "Use HTTPS",
+          "verify_ssl": "Verify SSL certificate"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach OnTheAir Video. Check the IP address, the port and that Remote Control is enabled in Settings > HTTP Server.",
+      "invalid_auth": "OnTheAir Video refused the credentials.",
+      "unknown": "Unexpected response from OnTheAir Video."
+    },
+    "abort": {
+      "already_configured": "This OnTheAir Video instance is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options",
+        "data": {
+          "scan_interval": "Polling interval (seconds)",
+          "fps": "Fallback frame rate for timecode conversion",
+          "thumbnail": "Show video output thumbnail"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "status": { "name": "Playback status" },
+      "current_clip": { "name": "Current clip" },
+      "playlist": { "name": "Playlist" },
+      "next_clip": { "name": "Next clip" },
+      "elapsed": { "name": "Elapsed" },
+      "remaining": { "name": "Remaining" },
+      "duration": { "name": "Clip duration" },
+      "next_live": { "name": "Next live" },
+      "fps": { "name": "Frame rate" }
+    }
+  }
+}
